@@ -1,8 +1,7 @@
-<script>
-export default {
-  props: ["quiz"],
-  setup() {},
-};
+<script setup>
+import { defineProps } from "vue";
+const { quiz } = defineProps({ quiz: Object });
+console.log(quiz);
 </script>
 
 <template>
